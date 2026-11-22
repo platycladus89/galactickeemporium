@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaktické Emporium | Rezervace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">GALAKTICKÉ EMPORIUM</div>
+
+        <nav>
+            <a href="index.html">DOMŮ</a>
+            <a href="shop.html">OBCHOD</a>
+            <a href="reservation.html">REZERVACE</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="pole">
+            <h1>Rezervace</h1>
+            <h3>Vyplňte formulář a zajistěte si svůj vyvolený artefakt!</h3>
+            <h3>Po vyplnění si můžete přijít na jednu z našich poboček!</h3>
+            <h4>(V otevírací době, prosím. Myslíme Vás, Pavle.)</h4>
+
+            <form id="rezervacniFormular">
+
+                <label for="jmeno">Jméno a příjmení:*</label>
+                <input type="text" id="jmeno" name="jmeno" placeholder="Klarg Margan" required>
+
+                <label for="email">E-mailová adresa:*</label>
+                <input type="email" id="email" name="email" placeholder="vas@email.cz" required>
+
+                <label for="produkt">Vyberte produkt:*</label>
+                <select id="produkt" name="produkt" required>
+                    <option value="">-- Vyberte produkt --</option>
+                    <option value="dyka">Praraptorská dýka – 2500 GC</option>
+                    <option value="semeno">Semena rozporce skvílavého – 300 GC</option>
+                    <option value="mangarabus">Mangarabus – 1000 GC</option>
+                    <option value="sponka">Sponka do vlasů – 50 GC</option>
+                    <option value="delvicus">Delvicus Otomara – 200 GC</option>
+                </select>
+
+                <label for="pocet">Počet kusů:</label>
+                <input type="number" id="pocet" name="pocet" min="1" max="10" value="1" required>
+
+                <label for="datum">Datum vyzvednutí:*</label>
+                <input type="date" id="datum" name="datum" required>
+
+                <button type="submit" class="tlacitko">Odeslat rezervaci</button>
+
+            </form>
+
+            <p id="potvrzeni"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Galaktické Emporium™</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

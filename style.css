@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Science+Gothic:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Science Gothic', monospace;
+    background-color: #080b18;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #10152b;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #252d50;
+}
+
+.logo {
+    color: #65e6ff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #65e6ff;
+}
+
+.pole {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 70px 0;
+}
+
+h1 {
+    color: #983ffd;
+    padding: 14px 0px;
+    text-shadow: 3px 3px #927e9b67
+}
+
+h2 {
+    color: #65e6ff;
+    padding: 14px 0px;
+}
+
+h3 {
+    color: #ffffff;
+    padding: 14px 0px;
+}
+
+h4 {
+    color: #ff0000ff;
+}
+
+.tlacitko {
+    display: inline-block;
+    background: #65e6ff;
+    color: #080b18;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.tlacitko:hover {
+    background: #b15cff;
+    color: white;
+}
+
+.produkty {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.produkt {
+    background-color: #10152b;
+    border: 2px solid #252d50;
+    padding: 25px;
+    text-align: left;
+}
+
+.produkt:hover {
+    border-color: #65e6ff;
+}
+
+form {
+    background-color: #10152b;
+    border: 2px solid #252d50;
+    padding: 30px;
+    margin-top: 30px;
+    max-width: 650px;
+}
+
+form label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    color: #65e6ff;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    background-color: #080b18;
+    color: white;
+    border: 1px solid #252d50;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+form button {
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#potvrzeni {
+    color: #65e6ff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.nahled {
+    margin-bottom: 20px;
+}
+
+.nahled img {
+    width: 500px;
+
+}
+
+.obrazek {
+    margin-bottom: 20px;
+}
+
+.obrazek img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+}
+
+footer {
+    background: #10152b;
+    text-align: center;
+    padding: 25px;
+    color: #929bb8;
+    border-top: 1px solid #252d50;
+}
+
+
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .pole {
+        width: 92%;
+    }
+}
