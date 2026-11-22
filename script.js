@@ -19,7 +19,6 @@ if (formular) {
 
         const datum = document.getElementById("datum").value;
 
-        // Kontrola data vyzvednutí
         const dnes = new Date();
         dnes.setHours(0, 0, 0, 0);
 
